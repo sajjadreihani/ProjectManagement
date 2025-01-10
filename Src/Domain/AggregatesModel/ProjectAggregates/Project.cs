@@ -4,7 +4,7 @@ using ProjectManagement.Shared.Enum;
 using ProjectManagement.Domain.SeedWork;
 
 namespace ProjectManagement.Domain.AggregatesModel.ProjectAggregates;
-public class Project : BaseModel
+public class Project : AuditableEntity
 {
     private Project()
     {

@@ -1,9 +1,10 @@
 ﻿using ProjectManagement.Domain.AggregatesModel.ProjectAggregates;
 using ProjectManagement.Shared.Enum;
 using ProjectManagement.Domain.ValueObjects;
+using ProjectManagement.Domain.SeedWork;
 
 namespace ProjectManagement.Domain.AggregatesModel.TaskAggregates;
-public class ProjectTask
+public class ProjectTask : AuditableEntity
 {
     private ProjectTask()
     {
@@ -19,7 +20,6 @@ public class ProjectTask
         Attachments = attachments;
     }
 
-    public Guid Id { get; private init; }
     public Project Project { get; private init; }
     public string AssignedTo { get; private init; }
     public string Title { get; private set; }

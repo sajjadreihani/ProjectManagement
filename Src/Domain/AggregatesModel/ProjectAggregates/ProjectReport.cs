@@ -3,7 +3,7 @@ using ProjectManagement.Domain.SeedWork;
 using ProjectManagement.Domain.ValueObjects;
 
 namespace ProjectManagement.Domain.AggregatesModel.ProjectAggregates;
-public class ProjectReport : BaseModel
+public class ProjectReport : AuditableEntity
 {
     private ProjectReport()
     {

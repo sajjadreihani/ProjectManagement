@@ -1,7 +1,7 @@
 ﻿using ProjectManagement.Domain.SeedWork;
 
 namespace ProjectManagement.Domain.AggregatesModel.TaskAggregates;
-public class TaskComment : BaseModel
+public class TaskComment : BaseEntity
 {
     public TaskComment(ProjectTask task, string comment)
     {
