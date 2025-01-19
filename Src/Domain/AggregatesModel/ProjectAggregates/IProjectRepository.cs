@@ -13,6 +13,4 @@ public interface IProjectRepository : IRepository<Project, Guid>
     Task<IEnumerable<Project>> GetAll(string name, string managerId, ProjectStatusEnum? status, int pageNumber, int rowCount, CancellationToken cancellationToken);
 
     Task<int> Count(string title, string managerId, ProjectStatusEnum? status, CancellationToken cancellationToken);
-
-    void Delete(ProjectReport report);
 }
